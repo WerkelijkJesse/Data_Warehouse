@@ -11,8 +11,8 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="21"
-  DTS:VersionGUID="{45D813F1-4F88-47FE-B9E5-01679AA68794}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{7769EE6F-DF52-4444-962A-A42906238E73}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -51,7 +51,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJSyJIgEVnEquJhLGnQnzsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADTMpA+TraB77QwsHmC8HRsmvqopdQ+TCaMPVGiCChmXQAAAAAOgAAAAAIAACAAAABZsa69wuBOtDYZcnaI/J1iCo1Ry9ahMUyaV4RLvE6v6iAAAACmI6yidj3QOUWWmnNKRhFUszI2KlNXui4Mg8rZ5h8cmEAAAAB0HSrffL6zO8JN/VY4PciD5m6N8QnH1caPIIsjxpHYt3CvnEDcaxaM9RNrjP36S+JrxeVlDMHIeuATNmJt/Gaq</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJSyJIgEVnEquJhLGnQnzsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABuxLfZo2x4Ja9vPbuUjSj2kgDAINVWB1xzjCLvWu5jDgAAAAAOgAAAAAIAACAAAAD73uWOgwpQaioYMZYGYdoiilhYsghbW2viRNm/kA1hciAAAADB+EtqjKx1+jo08s+OSEA9LTx3M+hSFdFZdOVfiQ0r3EAAAABUHFXF7W+pPsff3MZIwc47JcF7PJvkxTEcQOT1sZokuRryrkEgvJUvzPte8y1taGNCUVeCWhmiFIqVK9uwFYYk</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2140,7 +2140,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{56F09A2F-DD90-478C-8EAA-4F050E1C7239}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE AC_employee;TRUNCATE TABLE AC_product;TRUNCATE TABLE AC_sales_order;TRUNCATE TABLE AC_sales_order_item;TRUNCATE TABLE GO_ORDER_DETAILS;TRUNCATE TABLE GO_ORDER_HEADER;TRUNCATE TABLE GO_ORDER_METHOD;TRUNCATE TABLE GO_PRODUCT;TRUNCATE TABLE GO_PROMOTION;TRUNCATE TABLE GO_RETAILER;TRUNCATE TABLE GO_RETURNED_ITEM;TRUNCATE TABLE GO_SALES_STAFF;TRUNCATE TABLE GO_SALES_TARGET;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE AC_employee;TRUNCATE TABLE AC_product;TRUNCATE TABLE AC_sales_order;TRUNCATE TABLE AC_sales_order_item;TRUNCATE TABLE GO_ORDER_DETAILS;TRUNCATE TABLE GO_ORDER_HEADER;TRUNCATE TABLE GO_ORDER_METHOD;TRUNCATE TABLE GO_PRODUCT; TRUNCATE TABLE GO_CAMPAIGN; TRUNCATE TABLE GO_PROMOTION; TRUNCATE TABLE GO_RETAILER;TRUNCATE TABLE GO_RETURNED_ITEM;TRUNCATE TABLE GO_SALES_STAFF;TRUNCATE TABLE GO_SALES_TARGET;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -4190,8 +4190,7 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\GO_Promotion\Data Conversion.Inputs[Data Conversion Input].Columns[DESCRIPTION]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
+                      cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="DESCRIPTION"
                       lineageId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESCRIPTION]" />
@@ -4418,7 +4417,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[GO_PROMOTION]</property>
+                  name="OpenRowset">[dbo].[PROMOTION]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4453,8 +4452,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Promotion\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4492,8 +4491,7 @@
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESCRIPTION]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESCRIPTION]"
@@ -4518,8 +4516,7 @@
                       name="DATE_END" />
                     <externalMetadataColumn
                       refId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESCRIPTION]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="wstr"
                       length="50"
                       name="DESCRIPTION" />
                   </externalMetadataColumns>
@@ -4546,8 +4543,7 @@
                       name="DATE_END" />
                     <outputColumn
                       refId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESCRIPTION]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="wstr"
                       length="50"
                       lineageId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESCRIPTION]"
                       name="DESCRIPTION" />
@@ -6526,6 +6522,10 @@
           Id="Package\Execute SQL Task"
           TopLeft="383.124994290993,56.7894747531315" />
         <NodeLayout
+          Size="152,42"
+          Id="Package\GO_Campaign"
+          TopLeft="445,450" />
+        <NodeLayout
           Size="168,43"
           Id="Package\GO_Order_Details"
           TopLeft="88.1249986868353,52.0000009787713" />
@@ -6720,6 +6720,40 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="521,492">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-89.000005401671,61.526326208234"
+              Start="0,0"
+              End="-89.000005401671,54.026326208234">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.763163104117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.763163104117"
+                    Point2="0,30.763163104117"
+                    Point3="-4,30.763163104117" />
+                  <mssgle:LineSegment
+                    End="-85.000005401671,30.763163104117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-85.000005401671,30.763163104117"
+                    Point2="-89.000005401671,30.763163104117"
+                    Point3="-89.000005401671,34.763163104117" />
+                  <mssgle:LineSegment
+                    End="-89.000005401671,54.026326208234" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
           TopLeft="260.958330716317,302.666671560522">
           <EdgeLayout.Curve>
@@ -6779,6 +6813,40 @@
                     Point3="37.5416661916921,29.53508860148" />
                   <mssgle:LineSegment
                     End="37.5416661916921,43.57017720296" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="410.374996135011,452.552639692445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.625003864989,18.447360307555"
+              Start="0,0"
+              End="27.125003864989,18.447360307555">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="13.3125019324945,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.3125019324945,0"
+                    Point2="17.3125019324945,0"
+                    Point3="17.3125019324945,4" />
+                  <mssgle:LineSegment
+                    End="17.3125019324945,14.447360307555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.3125019324945,14.447360307555"
+                    Point2="17.3125019324945,18.447360307555"
+                    Point3="21.3125019324945,18.447360307555" />
+                  <mssgle:LineSegment
+                    End="27.125003864989,18.447360307555" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6951,78 +7019,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="152,42"
-          Id="Package\GO_Campaign"
-          TopLeft="445,450" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="410.374996135011,452.552639692445">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="34.625003864989,18.447360307555"
-              Start="0,0"
-              End="27.125003864989,18.447360307555">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="13.3125019324945,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="13.3125019324945,0"
-                    Point2="17.3125019324945,0"
-                    Point3="17.3125019324945,4" />
-                  <mssgle:LineSegment
-                    End="17.3125019324945,14.447360307555" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.3125019324945,14.447360307555"
-                    Point2="17.3125019324945,18.447360307555"
-                    Point3="21.3125019324945,18.447360307555" />
-                  <mssgle:LineSegment
-                    End="27.125003864989,18.447360307555" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="521,492">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-89.000005401671,61.526326208234"
-              Start="0,0"
-              End="-89.000005401671,54.026326208234">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.763163104117" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.763163104117"
-                    Point2="0,30.763163104117"
-                    Point3="-4,30.763163104117" />
-                  <mssgle:LineSegment
-                    End="-85.000005401671,30.763163104117" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-85.000005401671,30.763163104117"
-                    Point2="-89.000005401671,30.763163104117"
-                    Point3="-89.000005401671,34.763163104117" />
-                  <mssgle:LineSegment
-                    End="-89.000005401671,54.026326208234" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -7030,7 +7026,7 @@
     design-time-name="Package\AC_Employee">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="159,43"
           Id="Package\AC_Employee\Data Conversion"
@@ -7074,7 +7070,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7108,7 +7106,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7139,7 +7139,7 @@
     design-time-name="Package\AC_Product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="159,43"
           Id="Package\AC_Product\Data Conversion"
@@ -7183,7 +7183,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7217,7 +7219,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7459,6 +7463,82 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\GO_Campaign">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\GO_Campaign\OLE DB Source"
+          TopLeft="297,166" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\GO_Campaign\OLE DB Destination"
+          TopLeft="319,310" />
+        <EdgeLayout
+          Id="Package\GO_Campaign.Paths[OLE DB Source Output]"
+          TopLeft="375.5,208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32,102"
+              Start="0,0"
+              End="32,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47"
+                    Point2="0,51"
+                    Point3="4,51" />
+                  <mssgle:LineSegment
+                    End="28,51" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28,51"
+                    Point2="32,51"
+                    Point3="32,55" />
+                  <mssgle:LineSegment
+                    End="32,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\GO_Campaign\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\GO_Campaign\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\GO_Order_Details">
     <LayoutInfo>
       <GraphLayout
@@ -7658,7 +7738,7 @@
     design-time-name="Package\GO_Order_Method">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="155,43"
           Id="Package\GO_Order_Method\OLE DB Source"
@@ -7702,7 +7782,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7724,7 +7806,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7760,7 +7844,7 @@
     design-time-name="Package\GO_Product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="155,43"
           Id="Package\GO_Product\OLE DB Source"
@@ -7804,7 +7888,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7838,7 +7924,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7880,39 +7968,27 @@
           Id="Package\GO_Promotion\OLE DB Destination"
           TopLeft="485,1006" />
         <NodeLayout
+          Size="159,43"
+          Id="Package\GO_Promotion\Data Conversion"
+          TopLeft="503,745" />
+        <NodeLayout
           Size="155,43"
           Id="Package\GO_Promotion\OLE DB Source"
           TopLeft="504,611" />
-        <NodeLayout
-          Size="159,43"
-          Id="Package\GO_Promotion\Data Conversion"
-          TopLeft="503,813" />
         <EdgeLayout
-          Id="Package\GO_Promotion.Paths[Data Conversion Output]"
-          TopLeft="582.5,856">
+          Id="Package\GO_Promotion.Paths[OLE DB Source Output]"
+          TopLeft="582,654">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-9,150"
+              EndConnector="0,91"
               Start="0,0"
-              End="-9,142.5">
+              End="0,83.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,71" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,71"
-                    Point2="0,75"
-                    Point3="-4,75" />
-                  <mssgle:LineSegment
-                    End="-5,75" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-5,75"
-                    Point2="-9,75"
-                    Point3="-9,79" />
-                  <mssgle:LineSegment
-                    End="-9,142.5" />
+                    End="0,83.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7922,19 +7998,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\GO_Promotion.Paths[OLE DB Source Output]"
-          TopLeft="582,654">
+          Id="Package\GO_Promotion.Paths[Data Conversion Output]"
+          TopLeft="582.5,788">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,159"
+              EndConnector="-9,218"
               Start="0,0"
-              End="0,151.5">
+              End="-9,210.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,151.5" />
+                    End="0,105" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,105"
+                    Point2="0,109"
+                    Point3="-4,109" />
+                  <mssgle:LineSegment
+                    End="-5,109" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5,109"
+                    Point2="-9,109"
+                    Point3="-9,113" />
+                  <mssgle:LineSegment
+                    End="-9,210.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7976,7 +8064,7 @@
     design-time-name="Package\GO_Retailer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="155,43"
           Id="Package\GO_Retailer\OLE DB Source"
@@ -8020,7 +8108,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8054,7 +8144,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8090,7 +8182,7 @@
     design-time-name="Package\GO_Returned_Item">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="155,43"
           Id="Package\GO_Returned_Item\OLE DB Source"
@@ -8130,7 +8222,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8166,7 +8260,7 @@
     design-time-name="Package\GO_Sales_Staff">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="155,43"
           Id="Package\GO_Sales_Staff\OLE DB Source"
@@ -8210,7 +8304,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8244,7 +8340,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8280,7 +8378,7 @@
     design-time-name="Package\GO_Sales_Target">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="159,43"
           Id="Package\GO_Sales_Target\Data Conversion"
@@ -8324,7 +8422,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8358,7 +8458,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8379,82 +8481,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\GO_Sales_Target\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\GO_Campaign">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\GO_Campaign\OLE DB Source"
-          TopLeft="297,166" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\GO_Campaign\OLE DB Destination"
-          TopLeft="319,310" />
-        <EdgeLayout
-          Id="Package\GO_Campaign.Paths[OLE DB Source Output]"
-          TopLeft="375.5,208">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="32,102"
-              Start="0,0"
-              End="32,94.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,47" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,47"
-                    Point2="0,51"
-                    Point3="4,51" />
-                  <mssgle:LineSegment
-                    End="28,51" />
-                  <mssgle:CubicBezierSegment
-                    Point1="28,51"
-                    Point2="32,51"
-                    Point3="32,55" />
-                  <mssgle:LineSegment
-                    End="32,94.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\GO_Campaign\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\GO_Campaign\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
