@@ -11,33 +11,33 @@
   DTS:LocaleID="1043"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{5743DCB0-C705-4EE5-B649-27D7CD987D27}">
+  DTS:VersionBuild="21"
+  DTS:VersionGUID="{45D813F1-4F88-47FE-B9E5-01679AA68794}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+      DTS:refId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{56F09A2F-DD90-478C-8EAA-4F050E1C7239}"
-      DTS:ObjectName="LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB">
+      DTS:ObjectName="LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LAPTOP-JESSE\SQLEXPRESS;Initial Catalog=DWH_StagingDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=LAPTOP-EV7E09P4\SQLEXPRESS;Initial Catalog=DWH_StagingDB;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+      DTS:refId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{4DE07EEF-9BDD-428E-9436-69F0CC782E5A}"
-      DTS:ObjectName="LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source">
+      DTS:ObjectName="LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LAPTOP-JESSE\SQLEXPRESS;Initial Catalog=GreatOutdoor2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=LAPTOP-EV7E09P4\SQLEXPRESS;Initial Catalog=GreatOutdoor2;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -51,7 +51,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj4jAvNxSDE6NMZGD6yR9tgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxjd1qlvfJXstK05X7+SMi7AowIaBT+TTWxKUc/VJEtAAAAAAOgAAAAAIAACAAAAByWK7Ld9XJOJr7ub+qrgnWzFunZZNBOb2cTWJWGiiZKiAAAAAGJpf2P9vwcnq/3a/UP5JkRTD4yLIYPJ8EXe8sSdhZt0AAAADQNhN7wTNbb2xdi79ugk8CLXRfhd32+2d/ngaZYBfFvawQe8CWKK6jsBRJVcsDHvLxzf8PjhEW30y1L+JDi/6i</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJSyJIgEVnEquJhLGnQnzsgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADTMpA+TraB77QwsHmC8HRsmvqopdQ+TCaMPVGiCChmXQAAAAAOgAAAAAIAACAAAABZsa69wuBOtDYZcnaI/J1iCo1Ry9ahMUyaV4RLvE6v6iAAAACmI6yidj3QOUWWmnNKRhFUszI2KlNXui4Mg8rZ5h8cmEAAAAB0HSrffL6zO8JN/VY4PciD5m6N8QnH1caPIIsjxpHYt3CvnEDcaxaM9RNrjP36S+JrxeVlDMHIeuATNmJt/Gaq</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -717,8 +717,8 @@
               <connections>
                 <connection
                   refId="Package\AC_Employee\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1234,8 +1234,8 @@
               <connections>
                 <connection
                   refId="Package\AC_Product\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1649,8 +1649,8 @@
               <connections>
                 <connection
                   refId="Package\AC_Sales_Order\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2026,8 +2026,8 @@
               <connections>
                 <connection
                   refId="Package\AC_Sales_Order_Item\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2144,6 +2144,306 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\GO_Campaign"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{01F29855-DB87-415D-BCBA-CE440422D5BA}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="GO_Campaign"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\GO_Campaign\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GO_CAMPAIGN]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\GO_Campaign\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PR_NUMBER]"
+                      cachedDataType="i2"
+                      cachedName="PR_NUMBER"
+                      externalMetadataColumnId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PR_NUMBER]"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PR_NUMBER]" />
+                    <inputColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCT_NUMBER]"
+                      cachedDataType="i4"
+                      cachedName="PRODUCT_NUMBER"
+                      externalMetadataColumnId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_NUMBER]"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PRODUCT_NUMBER]" />
+                    <inputColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DISCOUNT]"
+                      cachedDataType="r4"
+                      cachedName="DISCOUNT"
+                      externalMetadataColumnId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISCOUNT]"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DISCOUNT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PR_NUMBER]"
+                      dataType="i4"
+                      name="PR_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCT_NUMBER]"
+                      dataType="i4"
+                      name="PRODUCT_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISCOUNT]"
+                      dataType="r4"
+                      name="DISCOUNT" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\GO_Campaign\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\GO_Campaign\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\GO_Campaign\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\GO_Campaign\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[CAMPAIGN]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\GO_Campaign\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PR_NUMBER]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PR_NUMBER]"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PR_NUMBER]"
+                      name="PR_NUMBER"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PRODUCT_NUMBER]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PRODUCT_NUMBER]"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[PRODUCT_NUMBER]"
+                      name="PRODUCT_NUMBER"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DISCOUNT]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DISCOUNT]"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].Columns[DISCOUNT]"
+                      name="DISCOUNT"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PR_NUMBER]"
+                      dataType="i2"
+                      name="PR_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PRODUCT_NUMBER]"
+                      dataType="i4"
+                      name="PRODUCT_NUMBER" />
+                    <externalMetadataColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DISCOUNT]"
+                      dataType="r4"
+                      name="DISCOUNT" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PR_NUMBER]"
+                      dataType="i2"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PR_NUMBER]"
+                      name="PR_NUMBER" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PRODUCT_NUMBER]"
+                      dataType="i4"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PRODUCT_NUMBER]"
+                      name="PRODUCT_NUMBER" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DISCOUNT]"
+                      dataType="r4"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DISCOUNT]"
+                      name="DISCOUNT" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\GO_Campaign.Paths[OLE DB Source Output]"
+              endId="Package\GO_Campaign\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\GO_Campaign\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\GO_Order_Details"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -2216,8 +2516,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Order_Details\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2371,8 +2671,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Order_Details\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2696,8 +2996,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Order_Header\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2845,8 +3145,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Order_Header\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3196,8 +3496,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Order_Method\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3315,8 +3615,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Order_Method\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3558,8 +3858,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Product\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3677,8 +3977,8 @@
               <connections>
                 <connection
                   refId="Package\GO_Product\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3890,7 +4190,8 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\GO_Promotion\Data Conversion.Inputs[Data Conversion Input].Columns[DESCRIPTION]"
-                      cachedDataType="wstr"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
                       cachedLength="50"
                       cachedName="DESCRIPTION"
                       lineageId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESCRIPTION]" />
@@ -3947,178 +4248,6 @@
                       refId="Package\GO_Promotion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\GO_Promotion\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\GO_Promotion\Lookup"
-              componentClassID="Microsoft.Lookup"
-              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
-              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="Lookup"
-              usesDispositions="true"
-              version="6">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Specifies the SQL statement that generates the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[CAMPAIGN]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
-                  expressionType="Notify"
-                  name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[CAMPAIGN]) [refTable]
-where [refTable].[PR_NUMBER] = ?</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of connection used to access the reference dataset."
-                  name="ConnectionType"
-                  typeConverter="LookupConnectionType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the cache type of the lookup table."
-                  name="CacheType"
-                  typeConverter="CacheType">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
-                  name="NoMatchBehavior"
-                  typeConverter="LookupNoMatchBehavior">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
-                  name="NoMatchCachePercentage">0</property>
-                <property
-                  dataType="System.Int32"
-                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
-                  name="MaxMemoryUsage">25</property>
-                <property
-                  dataType="System.Int64"
-                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
-                  name="MaxMemoryUsage64">25</property>
-                <property
-                  dataType="System.String"
-                  description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PR_NUMBER" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PRODUCT_NUMBER" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DISCOUNT" dataType="DT_R4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
-                <property
-                  containsID="true"
-                  dataType="System.String"
-                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].Columns[PR_NUMBER]};</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
-                  name="TreatDuplicateKeysAsError">false</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\GO_Promotion\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  description="Connection manager used to access lookup data."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\GO_Promotion\Lookup.Inputs[Lookup Input]"
-                  name="Lookup Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\GO_Promotion\Lookup.Inputs[Lookup Input].Columns[PR_NUMBER]"
-                      cachedDataType="i2"
-                      cachedName="PR_NUMBER"
-                      lineageId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].Columns[PR_NUMBER]">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">PR_NUMBER</property>
-                        <property
-                          dataType="System.Null"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn" />
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output]"
-                  errorOrTruncationOperation="Lookup"
-                  errorRowDisposition="FailComponent"
-                  exclusionGroup="1"
-                  name="Lookup Match Output"
-                  synchronousInputId="Package\GO_Promotion\Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output].Columns[DISCOUNT]"
-                      dataType="r4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output].Columns[DISCOUNT]"
-                      name="DISCOUNT"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">DISCOUNT</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output].Columns[PRODUCT_NUMBER]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output].Columns[PRODUCT_NUMBER]"
-                      name="PRODUCT_NUMBER"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.String"
-                          description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">PRODUCT_NUMBER</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\GO_Promotion\Lookup.Outputs[Lookup No Match Output]"
-                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
-                  exclusionGroup="1"
-                  name="Lookup No Match Output"
-                  synchronousInputId="Package\GO_Promotion\Lookup.Inputs[Lookup Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\GO_Promotion\Lookup.Outputs[Lookup Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Lookup Error Output"
-                  synchronousInputId="Package\GO_Promotion\Lookup.Inputs[Lookup Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\GO_Promotion\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\GO_Promotion\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\GO_Promotion\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\GO_Promotion\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4185,8 +4314,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Promotion\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4224,18 +4353,6 @@ where [refTable].[PR_NUMBER] = ?</property>
                       cachedName="Copy of DESCRIPTION"
                       externalMetadataColumnId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPTION]"
                       lineageId="Package\GO_Promotion\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of DESCRIPTION]" />
-                    <inputColumn
-                      refId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DISCOUNT]"
-                      cachedDataType="r4"
-                      cachedName="DISCOUNT"
-                      externalMetadataColumnId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISCOUNT]"
-                      lineageId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output].Columns[DISCOUNT]" />
-                    <inputColumn
-                      refId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRODUCT_NUMBER]"
-                      cachedDataType="i4"
-                      cachedName="PRODUCT_NUMBER"
-                      externalMetadataColumnId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTKEY]"
-                      lineageId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output].Columns[PRODUCT_NUMBER]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4257,14 +4374,6 @@ where [refTable].[PR_NUMBER] = ?</property>
                       dataType="str"
                       length="50"
                       name="DESCRIPTION" />
-                    <externalMetadataColumn
-                      refId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISCOUNT]"
-                      dataType="r4"
-                      name="DISCOUNT" />
-                    <externalMetadataColumn
-                      refId="Package\GO_Promotion\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRODUCTKEY]"
-                      dataType="i4"
-                      name="PRODUCTKEY" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -4309,7 +4418,7 @@ where [refTable].[PR_NUMBER] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[PROMOTION]</property>
+                  name="OpenRowset">[dbo].[GO_PROMOTION]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -4344,8 +4453,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Promotion\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4383,7 +4492,8 @@ where [refTable].[PR_NUMBER] = ?</property>
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].Columns[DESCRIPTION]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESCRIPTION]"
@@ -4408,7 +4518,8 @@ where [refTable].[PR_NUMBER] = ?</property>
                       name="DATE_END" />
                     <externalMetadataColumn
                       refId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DESCRIPTION]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       name="DESCRIPTION" />
                   </externalMetadataColumns>
@@ -4435,7 +4546,8 @@ where [refTable].[PR_NUMBER] = ?</property>
                       name="DATE_END" />
                     <outputColumn
                       refId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESCRIPTION]"
-                      dataType="wstr"
+                      codePage="1252"
+                      dataType="str"
                       length="50"
                       lineageId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DESCRIPTION]"
                       name="DESCRIPTION" />
@@ -4464,13 +4576,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               name="Data Conversion Output"
               startId="Package\GO_Promotion\Data Conversion.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\GO_Promotion.Paths[Lookup Match Output]"
-              endId="Package\GO_Promotion\Data Conversion.Inputs[Data Conversion Input]"
-              name="Lookup Match Output"
-              startId="Package\GO_Promotion\Lookup.Outputs[Lookup Match Output]" />
-            <path
               refId="Package\GO_Promotion.Paths[OLE DB Source Output]"
-              endId="Package\GO_Promotion\Lookup.Inputs[Lookup Input]"
+              endId="Package\GO_Promotion\Data Conversion.Inputs[Data Conversion Input]"
               name="OLE DB Source Output"
               startId="Package\GO_Promotion\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
@@ -4628,8 +4735,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Retailer\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4747,8 +4854,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Retailer\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -4948,8 +5055,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Returned_Item\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5083,8 +5190,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Returned_Item\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5400,8 +5507,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Sales_Staff\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5543,8 +5650,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Sales_Staff\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -5934,8 +6041,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Sales_Target\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.DWH_StagingDB]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6089,8 +6196,8 @@ where [refTable].[PR_NUMBER] = ?</property>
               <connections>
                 <connection
                   refId="Package\GO_Sales_Target\OLE DB Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-JESSE\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerID="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-EV7E09P4\SQLEXPRESS.GreatOutdoor_Source]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6314,6 +6421,14 @@ where [refTable].[PR_NUMBER] = ?</property>
       DTS:ObjectName="Constraint 12"
       DTS:To="Package\GO_Order_Details" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
+      DTS:CreationName=""
+      DTS:DTSID="{991F8099-8AD2-4A5D-80F5-DC0F124B64D9}"
+      DTS:From="Package\GO_Campaign"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 13"
+      DTS:To="Package\GO_Retailer" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{FEB27CC1-A908-454C-8CB5-FC178E5F1356}"
@@ -6332,11 +6447,11 @@ where [refTable].[PR_NUMBER] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{39D3602C-5372-4955-9EAB-56374BC19AB5}"
+      DTS:DTSID="{4E514CA4-BB92-415B-B8E8-AF3E934E1073}"
       DTS:From="Package\GO_Promotion"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
-      DTS:To="Package\GO_Retailer" />
+      DTS:To="Package\GO_Campaign" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
@@ -6391,59 +6506,59 @@ where [refTable].[PR_NUMBER] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="148,42.6666666666667"
+          Size="148,43"
           Id="Package\AC_Employee"
           TopLeft="842.499987445772,767.000014436872" />
         <NodeLayout
-          Size="137.333333333334,42.6666666666667"
+          Size="137,43"
           Id="Package\AC_Product"
           TopLeft="966.87498559244,684.89474973355" />
         <NodeLayout
-          Size="160,42.6666666666667"
+          Size="160,43"
           Id="Package\AC_Sales_Order"
           TopLeft="1080.62498389743,614.421064196531" />
         <NodeLayout
-          Size="186.666666666667,42.6666666666667"
+          Size="187,43"
           Id="Package\AC_Sales_Order_Item"
           TopLeft="1211.87498194166,535.73685218918" />
         <NodeLayout
-          Size="168,42.6666666666667"
+          Size="168,43"
           Id="Package\Execute SQL Task"
           TopLeft="383.124994290993,56.7894747531315" />
         <NodeLayout
-          Size="168,42.6666666666667"
+          Size="168,43"
           Id="Package\GO_Order_Details"
           TopLeft="88.1249986868353,52.0000009787713" />
         <NodeLayout
-          Size="170.666666666667,42.6666666666667"
+          Size="171,43"
           Id="Package\GO_Order_Header"
           TopLeft="114.37499829568,146.421055387592" />
         <NodeLayout
-          Size="170.666666666667,42.6666666666667"
+          Size="171,43"
           Id="Package\GO_Order_Method"
           TopLeft="175.624997382984,260.000004893855" />
         <NodeLayout
-          Size="139.333333333334,42.6666666666667"
+          Size="139,43"
           Id="Package\GO_Product"
           TopLeft="227.499996609986,337.315795822818" />
         <NodeLayout
-          Size="150.666666666667,42.6666666666667"
+          Size="151,43"
           Id="Package\GO_Promotion"
           TopLeft="259.374996135011,431.052639692445" />
         <NodeLayout
-          Size="139.333333333334,42.6666666666667"
+          Size="139,43"
           Id="Package\GO_Retailer"
           TopLeft="362.499994598329,553.526326208234" />
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
+          Size="173,43"
           Id="Package\GO_Returned_Item"
           TopLeft="414.999993816018,618.526327431698" />
         <NodeLayout
-          Size="157.333333333334,42.6666666666667"
+          Size="157,43"
           Id="Package\GO_Sales_Staff"
           TopLeft="516.874992297962,706.78948698777" />
         <NodeLayout
-          Size="165.333333333334,42.6666666666667"
+          Size="165,43"
           Id="Package\GO_Sales_Target"
           TopLeft="610.624990900978,814.210541641283" />
         <EdgeLayout
@@ -6673,40 +6788,6 @@ where [refTable].[PR_NUMBER] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="334.708329468345,473.719306359111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="97.4583317966509,79.8070198491227"
-              Start="0,0"
-              End="97.4583317966509,72.3070198491227">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.9035099245613" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,35.9035099245613"
-                    Point2="0,39.9035099245613"
-                    Point3="4,39.9035099245613" />
-                  <mssgle:LineSegment
-                    End="93.4583317966509,39.9035099245613" />
-                  <mssgle:CubicBezierSegment
-                    Point1="93.4583317966509,39.9035099245613"
-                    Point2="97.4583317966509,39.9035099245613"
-                    Point3="97.4583317966509,43.9035099245613" />
-                  <mssgle:LineSegment
-                    End="97.4583317966509,72.3070198491227" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="501.833327931662,574.859659541567">
           <EdgeLayout.Curve>
@@ -6870,6 +6951,78 @@ where [refTable].[PR_NUMBER] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="152,42"
+          Id="Package\GO_Campaign"
+          TopLeft="445,450" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="410.374996135011,452.552639692445">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.625003864989,18.447360307555"
+              Start="0,0"
+              End="27.125003864989,18.447360307555">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="13.3125019324945,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.3125019324945,0"
+                    Point2="17.3125019324945,0"
+                    Point3="17.3125019324945,4" />
+                  <mssgle:LineSegment
+                    End="17.3125019324945,14.447360307555" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.3125019324945,14.447360307555"
+                    Point2="17.3125019324945,18.447360307555"
+                    Point3="21.3125019324945,18.447360307555" />
+                  <mssgle:LineSegment
+                    End="27.125003864989,18.447360307555" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="521,492">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-89.000005401671,61.526326208234"
+              Start="0,0"
+              End="-89.000005401671,54.026326208234">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.763163104117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.763163104117"
+                    Point2="0,30.763163104117"
+                    Point3="-4,30.763163104117" />
+                  <mssgle:LineSegment
+                    End="-85.000005401671,30.763163104117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-85.000005401671,30.763163104117"
+                    Point2="-89.000005401671,30.763163104117"
+                    Point3="-89.000005401671,34.763163104117" />
+                  <mssgle:LineSegment
+                    End="-89.000005401671,54.026326208234" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -6879,15 +7032,15 @@ where [refTable].[PR_NUMBER] = ?</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\AC_Employee\Data Conversion"
           TopLeft="645,696" />
         <NodeLayout
-          Size="164,42.6666666666667"
+          Size="164,43"
           Id="Package\AC_Employee\ADO NET Source"
           TopLeft="581,501" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\AC_Employee\OLE DB Destination"
           TopLeft="570,935" />
         <EdgeLayout
@@ -6986,17 +7139,17 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\AC_Product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\AC_Product\Data Conversion"
           TopLeft="755,759" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\AC_Product\OLE DB Destination"
           TopLeft="799,933" />
         <NodeLayout
-          Size="164,42.6666666666667"
+          Size="164,43"
           Id="Package\AC_Product\ADO NET Source"
           TopLeft="682,622" />
         <EdgeLayout
@@ -7030,9 +7183,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7066,9 +7217,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7509,17 +7658,17 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\GO_Order_Method">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Order_Method\OLE DB Source"
           TopLeft="394,718" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\GO_Order_Method\OLE DB Destination"
           TopLeft="559,1104" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\GO_Order_Method\Data Conversion"
           TopLeft="560,904" />
         <EdgeLayout
@@ -7553,9 +7702,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7577,9 +7724,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7615,17 +7760,17 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\GO_Product">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Product\OLE DB Source"
           TopLeft="560,597" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\GO_Product\OLE DB Destination"
           TopLeft="805,954" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\GO_Product\Data Conversion"
           TopLeft="824,768" />
         <EdgeLayout
@@ -7659,9 +7804,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7695,9 +7838,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7733,49 +7874,45 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\GO_Promotion">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="114.666666666667,42.6666666666667"
-          Id="Package\GO_Promotion\Lookup"
-          TopLeft="438.749993462116,699.789480381065" />
+          Size="177,42"
+          Id="Package\GO_Promotion\OLE DB Destination"
+          TopLeft="485,1006" />
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Promotion\OLE DB Source"
           TopLeft="504,611" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\GO_Promotion\Data Conversion"
           TopLeft="503,813" />
-        <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\GO_Promotion\OLE DB Destination"
-          TopLeft="485,1006" />
         <EdgeLayout
-          Id="Package\GO_Promotion.Paths[OLE DB Source Output]"
-          TopLeft="581.333333333333,653.666666666667">
+          Id="Package\GO_Promotion.Paths[Data Conversion Output]"
+          TopLeft="582.5,856">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-85.2500065378845,46.1228137143983"
+              EndConnector="-9,150"
               Start="0,0"
-              End="-85.2500065378845,38.6228137143983">
+              End="-9,142.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.0614068571991" />
+                    End="0,71" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.0614068571991"
-                    Point2="0,23.0614068571991"
-                    Point3="-4,23.0614068571991" />
+                    Point1="0,71"
+                    Point2="0,75"
+                    Point3="-4,75" />
                   <mssgle:LineSegment
-                    End="-81.2500065378845,23.0614068571991" />
+                    End="-5,75" />
                   <mssgle:CubicBezierSegment
-                    Point1="-81.2500065378845,23.0614068571991"
-                    Point2="-85.2500065378845,23.0614068571991"
-                    Point3="-85.2500065378845,27.0614068571991" />
+                    Point1="-5,75"
+                    Point2="-9,75"
+                    Point3="-9,79" />
                   <mssgle:LineSegment
-                    End="-85.2500065378845,38.6228137143983" />
+                    End="-9,142.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7785,67 +7922,19 @@ where [refTable].[PR_NUMBER] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\GO_Promotion.Paths[Lookup Match Output]"
-          TopLeft="496.083326795449,742.456147047732">
+          Id="Package\GO_Promotion.Paths[OLE DB Source Output]"
+          TopLeft="582,654">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="86.2500065378845,70.5438529522685"
+              EndConnector="0,159"
               Start="0,0"
-              End="86.2500065378845,63.0438529522685">
+              End="0,151.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.2719264761342" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.2719264761342"
-                    Point2="0,35.2719264761342"
-                    Point3="4,35.2719264761342" />
-                  <mssgle:LineSegment
-                    End="82.2500065378845,35.2719264761342" />
-                  <mssgle:CubicBezierSegment
-                    Point1="82.2500065378845,35.2719264761342"
-                    Point2="86.2500065378845,35.2719264761342"
-                    Point3="86.2500065378845,39.2719264761342" />
-                  <mssgle:LineSegment
-                    End="86.2500065378845,63.0438529522685" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-5.06638344980777,40.2719264761342,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\GO_Promotion.Paths[Data Conversion Output]"
-          TopLeft="582.333333333333,855.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10,150.333333333333"
-              Start="0,0"
-              End="-10,142.833333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,71.1666666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,71.1666666666666"
-                    Point2="0,75.1666666666666"
-                    Point3="-4,75.1666666666666" />
-                  <mssgle:LineSegment
-                    End="-6,75.1666666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6,75.1666666666666"
-                    Point2="-10,75.1666666666666"
-                    Point3="-10,79.1666666666666" />
-                  <mssgle:LineSegment
-                    End="-10,142.833333333333" />
+                    End="0,151.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7858,25 +7947,15 @@ where [refTable].[PR_NUMBER] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\GO_Promotion\Lookup">
+    design-time-name="Package\GO_Promotion\OLE DB Destination">
     <Properties>
       <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[CAMPAIGN]</Value>
+        <Name>DataSourceViewID</Name>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
@@ -7893,34 +7972,21 @@ where [refTable].[PR_NUMBER] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\GO_Promotion\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\GO_Retailer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Retailer\OLE DB Source"
           TopLeft="491,753" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\GO_Retailer\OLE DB Destination"
           TopLeft="576,969" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\GO_Retailer\Data Conversion"
           TopLeft="631,868" />
         <EdgeLayout
@@ -7954,9 +8020,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7990,9 +8054,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8028,13 +8090,13 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\GO_Returned_Item">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Returned_Item\OLE DB Source"
           TopLeft="497,614" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\GO_Returned_Item\OLE DB Destination"
           TopLeft="677,889" />
         <EdgeLayout
@@ -8068,9 +8130,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8106,17 +8166,17 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\GO_Sales_Staff">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Sales_Staff\OLE DB Source"
           TopLeft="324,684" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\GO_Sales_Staff\OLE DB Destination"
           TopLeft="451,1057" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\GO_Sales_Staff\Data Conversion"
           TopLeft="484,872" />
         <EdgeLayout
@@ -8150,9 +8210,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8186,9 +8244,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8224,17 +8280,17 @@ where [refTable].[PR_NUMBER] = ?</property>
     design-time-name="Package\GO_Sales_Target">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\GO_Sales_Target\Data Conversion"
           TopLeft="514,741" />
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
+          Size="175,43"
           Id="Package\GO_Sales_Target\OLE DB Destination"
           TopLeft="451,1007" />
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
+          Size="155,43"
           Id="Package\GO_Sales_Target\OLE DB Source"
           TopLeft="436,503" />
         <EdgeLayout
@@ -8268,9 +8324,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8304,9 +8358,7 @@ where [refTable].[PR_NUMBER] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8327,6 +8379,82 @@ where [refTable].[PR_NUMBER] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\GO_Sales_Target\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\GO_Campaign">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\GO_Campaign\OLE DB Source"
+          TopLeft="297,166" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\GO_Campaign\OLE DB Destination"
+          TopLeft="319,310" />
+        <EdgeLayout
+          Id="Package\GO_Campaign.Paths[OLE DB Source Output]"
+          TopLeft="375.5,208">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32,102"
+              Start="0,0"
+              End="32,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47"
+                    Point2="0,51"
+                    Point3="4,51" />
+                  <mssgle:LineSegment
+                    End="28,51" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28,51"
+                    Point2="32,51"
+                    Point3="32,55" />
+                  <mssgle:LineSegment
+                    End="32,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\GO_Campaign\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\GO_Campaign\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
